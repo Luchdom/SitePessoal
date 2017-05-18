@@ -1,29 +1,100 @@
 ﻿@using Microsoft.AspNetCore.Mvc.Localization
 @using Microsoft.Extensions.Localization
 @inject IViewLocalizer Localizer
-@inject IStringLocalizer<SharedResources> SharedLocalizer
-@inject IHtmlLocalizer<SharedResources> SharedHtmlLocalizer
 <article class="hs-content skills-section" id="section3">
     <span class="sec-icon fa fa-diamond"></span>
     <div class="hs-inner">
-        <span class="before-title">.03</span>
-        <h2>SKILLS</h2>
-        <span class="content-title">PROGRAMMING SKIILLS</span>
+        <span class="before-title">.03 </span>
+        <h2>@Localizer["SKILLS"]</h2>
+        <span class="content-title">@Localizer["PROGRAMMING_SKIILLS"]</span>
         <div class="skolls">
             <span class="skill-description">Lorem ipsum dolor sit amet, consectetur adipiscingVivam sit amet ligula non lectus cursus egestas. Cras erat lorem, fringilla quis sagittis in, sagittis inNam leo tortor Nam leo tortor Vivam.</span>
             <div class="bar-main-container">
                 <div class="wrap">
-                    <div class="bar-percentage" data-percentage="60"></div>
-                    <span class="skill-detail"><i class="fa fa-bar-chart"></i>LEVEL : INTERMEDIATE</span><span class="skill-detail"><i class="fa fa-binoculars"></i>EXPERIENCE : 3 YEARS</span>
+                    <div class="bar-percentage" data-percentage="80"></div>
+                    <span class="skill-detail"><i class="fa fa-bar-chart"></i>LEVEL : @Localizer["INTERMEDIATE"]</span><span class="skill-detail"><i class="fa fa-binoculars"></i>@Localizer["EXPERIENCE"] : <year-experience year-start-value="2012"></year-experience> @Localizer["YEARS"]</span>
                     <div class="bar-container">
                         <div class="bar"></div>
                     </div>
-                    <span class="label">Php</span><span class="label">Asp</span><span class="label">Wordpress</span>
+                    <span class="label">.NET Framework 3.5 ></span><span class="label">MVC5</span><span class="label">WebForms</span>
                     <div style="clear:both;"></div>
                 </div>
             </div>
+            <div class="bar-main-container">
+                <div class="wrap">
+                    <div class="bar-percentage" data-percentage="80"></div>
+                    <span class="skill-detail"><i class="fa fa-bar-chart"></i>LEVEL : @Localizer["BASIC"]</span><span class="skill-detail"><i class="fa fa-binoculars"></i>@Localizer["EXPERIENCE"] : <year-experience year-start-value="2016"></year-experience> @Localizer["YEARS"]</span>
+                    <div class="bar-container">
+                        <div class="bar"></div>
+                    </div>
+                    <span class="label">.NET Core</span><span class="label">MVC6</span>
+                    <div style="clear:both;"></div>
+                </div>
+            </div>
+            <div class="bar-main-container">
+                <div class="wrap">
+                    <div class="bar-percentage" data-percentage="70"></div>
+                    <span class="skill-detail"><i class="fa fa-bar-chart"></i>LEVEL : @Localizer["INTERMEDIATE"]</span><span class="skill-detail"><i class="fa fa-binoculars"></i>@Localizer["EXPERIENCE"] : <year-experience year-start-value="2012"></year-experience> @Localizer["YEARS"]</span>
+                    <div class="bar-container">
+                        <div class="bar"></div>
+                    </div>
+                    <span class="label">HTML</span><span class="label">Javascript/Jquery</span><span class="label">CSS</span>
+                    <div style="clear:both;"></div>
+                </div>
+            </div>
+            <div class="bar-main-container">
+                <div class="wrap">
+                    <div class="bar-percentage" data-percentage="60"></div>
+                    <span class="skill-detail"><i class="fa fa-bar-chart"></i>LEVEL : @Localizer["INTERMEDIATE"]</span><span class="skill-detail"><i class="fa fa-binoculars"></i>@Localizer["EXPERIENCE"] : <year-experience year-start-value="2014"></year-experience> @Localizer["YEARS"]</span>
+                    <div class="bar-container">
+                        <div class="bar"></div>
+                    </div>
+                    <span class="label">Xamarin Forms</span><span class="label">PCL</span>
+                    <div style="clear:both;"></div>
+                </div>
+            </div>
+
+            <span class="skill-description">Lorem ipsum dolor sit amet, consectetur adipiscingVivam sit amet ligula non lectus cursus egestas. Cras erat lorem, fringilla quis sagittis in, sagittis inNam leo tortor Nam leo tortor Vivam.</span>
+            <div class="bar-main-container">
+                <div class="wrap">
+                    <div class="bar-percentage" data-percentage="40"></div>
+                    <span class="skill-detail"><i class="fa fa-bar-chart"></i>LEVEL : @Localizer["BASIC"]</span><span class="skill-detail"><i class="fa fa-binoculars"></i>@Localizer["EXPERIENCE"] : <year-experience year-start-value="2014"></year-experience> @Localizer["YEARS"]</span>
+                    <div class="bar-container">
+                        <div class="bar"></div>
+                    </div>
+                    <span class="label">IoT</span><span class="label">Arduino</span><span class="label">FPGA</span>
+                    <div style="clear:both;"></div>
+                </div>
+            </div>
+
+
+            <span class="skill-description">Lorem ipsum dolor sit amet, consectetur adipiscingVivam sit amet ligula non lectus cursus egestas. Cras erat lorem, fringilla quis sagittis in, sagittis inNam leo tortor Nam leo tortor Vivam.</span>
+            <div class="bar-main-container">
+                <div class="wrap">
+                    <div class="bar-percentage" data-percentage="80"></div>
+                    <span class="skill-detail"><i class="fa fa-bar-chart"></i>LEVEL : @Localizer["INTERMEDIATE"]</span><span class="skill-detail"><i class="fa fa-binoculars"></i>@Localizer["EXPERIENCE"] : <year-experience year-start-value="2012"></year-experience> @Localizer["YEARS"]</span>
+                    <div class="bar-container">
+                        <div class="bar"></div>
+                    </div>
+                    <span class="label">SQL Server</span><span class="label">Entity Framework</span><span class="label">MySQL</span>
+                    <div style="clear:both;"></div>
+                </div>
+            </div>
+            <div class="bar-main-container">
+                <div class="wrap">
+                    <div class="bar-percentage" data-percentage="30"></div>
+                    <span class="skill-detail"><i class="fa fa-bar-chart"></i>LEVEL : @Localizer["BASIC"]</span><span class="skill-detail"><i class="fa fa-binoculars"></i>@Localizer["EXPERIENCE"] : <year-experience year-start-value="2016"></year-experience> @Localizer["YEARS"]</span>
+                    <div class="bar-container">
+                        <div class="bar"></div>
+                    </div>
+                    <span class="label">MongoDB</span><span class="label">Redis</span>
+                    <div style="clear:both;"></div>
+                </div>
+            </div>
+
+            
         </div>
-        <span class="content-title">DESIGN SKILLS</span>
+        @*<span class="content-title">DESIGN SKILLS</span>
         <div class="skolls">
             <span class="skill-description">Lorem ipsum dolor sit amet, consectetur adipiscingVivam sit amet ligula non lectus cursus egestas. Cras erat lorem, fringilla quis sagittis in, sagittis inNam leo tortor Nam leo tortor Vivam.</span>
             <div class="bar-main-container">
@@ -37,23 +108,80 @@
                     <div style="clear:both;"></div>
                 </div>
             </div>
-        </div>
-        <span class="content-title">OFFICE SKILLS</span>
+        </div>*@
+        <span class="content-title">@Localizer["DEVELOPMENT_TOOLS_API_SKILLS"]</span>
         <div class="skolls">
             <span class="skill-description">Lorem ipsum dolor sit amet, consectetur adipiscingVivam sit amet ligula non lectus cursus egestas. Cras erat lorem, fringilla quis sagittis in, sagittis inNam leo tortor Nam leo tortor Vivam.</span>
             <div class="bar-main-container">
                 <div class="wrap">
-                    <div class="bar-percentage" data-percentage="40"></div>
-                    <span class="skill-detail"><i class="fa fa-bar-chart"></i>LEVEL : ADVANCED</span><span class="skill-detail"><i class="fa fa-binoculars"></i>EXPERIENCE : 5 YEARS</span>
+                    <div class="bar-percentage" data-percentage="90"></div>
+                    <span class="skill-detail"><i class="fa fa-bar-chart"></i>LEVEL : @Localizer["ADVANCED"]</span><span class="skill-detail"><i class="fa fa-binoculars"></i>@Localizer["EXPERIENCE"] : <year-experience year-start-value="2012" year-end-value="2015"></year-experience> @Localizer["YEARS"]</span>
                     <div class="bar-container">
                         <div class="bar"></div>
                     </div>
-                    <span class="label">Ms excel</span><span class="label">Ms word</span><span class="label">Ms powerpoint</span>
+                    <span class="label">DevExpress WebForms</span>
+                    <div style="clear:both;"></div>
+                </div>
+            </div>
+            <div class="bar-main-container">
+                <div class="wrap">
+                    <div class="bar-percentage" data-percentage="80"></div>
+                    <span class="skill-detail"><i class="fa fa-bar-chart"></i>LEVEL : @Localizer["ADVANCED"]</span><span class="skill-detail"><i class="fa fa-binoculars"></i>@Localizer["EXPERIENCE"] : <year-experience year-start-value="2014"></year-experience> @Localizer["YEARS"]</span>
+                    <div class="bar-container">
+                        <div class="bar"></div>
+                    </div>
+                    <span class="label">Aurigma Graphics Mill</span>
+                    <div style="clear:both;"></div>
+                </div>
+            </div>
+            <div class="bar-main-container">
+                <div class="wrap">
+                    <div class="bar-percentage" data-percentage="60"></div>
+                    <span class="skill-detail"><i class="fa fa-bar-chart"></i>LEVEL : @Localizer["INTERMEDIATE"]</span><span class="skill-detail"><i class="fa fa-binoculars"></i>@Localizer["EXPERIENCE"] : <year-experience year-start-value="2014"></year-experience> @Localizer["YEARS"]</span>
+                    <div class="bar-container">
+                        <div class="bar"></div>
+                    </div>
+                    <span class="label">GitHub</span><span class="label">VSTFS</span><span class="label">BitBucket</span>
+                    <div style="clear:both;"></div>
+                </div>
+            </div>
+            <div class="bar-main-container">
+                <div class="wrap">
+                    <div class="bar-percentage" data-percentage="50"></div>
+                    <span class="skill-detail"><i class="fa fa-bar-chart"></i>LEVEL : @Localizer["INTERMEDIATE"]</span><span class="skill-detail"><i class="fa fa-binoculars"></i>@Localizer["EXPERIENCE"] : <year-experience year-start-value="2014"></year-experience> @Localizer["YEARS"]</span>
+                    <div class="bar-container">
+                        <div class="bar"></div>
+                    </div>
+                    <span class="label">Photoshop</span>
+                    <div style="clear:both;"></div>
+                </div>
+            </div>
+
+            <span class="skill-description">Lorem ipsum dolor sit amet, consectetur adipiscingVivam sit amet ligula non lectus cursus egestas. Cras erat lorem, fringilla quis sagittis in, sagittis inNam leo tortor Nam leo tortor Vivam.</span>
+            <div class="bar-main-container">
+                <div class="wrap">
+                    <div class="bar-percentage" data-percentage="80"></div>
+                    <span class="skill-detail"><i class="fa fa-bar-chart"></i>LEVEL : @Localizer["ADVANCED"]</span><span class="skill-detail"><i class="fa fa-binoculars"></i>@Localizer["EXPERIENCE"] : <year-experience year-start-value="2014"></year-experience> @Localizer["YEARS"]</span>
+                    <div class="bar-container">
+                        <div class="bar"></div>
+                    </div>
+                    <span class="label">Google APIs</span><span class="label">Cielo API</span>
+                    <div style="clear:both;"></div>
+                </div>
+            </div>
+            <div class="bar-main-container">
+                <div class="wrap">
+                    <div class="bar-percentage" data-percentage="30"></div>
+                    <span class="skill-detail"><i class="fa fa-bar-chart"></i>LEVEL : @Localizer["BASIC"]</span><span class="skill-detail"><i class="fa fa-binoculars"></i>@Localizer["EXPERIENCE"] : <year-experience year-start-value="2014"></year-experience> @Localizer["YEARS"]</span>
+                    <div class="bar-container">
+                        <div class="bar"></div>
+                    </div>
+                    <span class="label">Instagram API</span><span class="label">Facebook API</span><span class="label">Twitter API</span>
                     <div style="clear:both;"></div>
                 </div>
             </div>
         </div>
-        <span class="content-title">SOCIAL SKILLS</span>
+        @*<span class="content-title">SOCIAL</span>
         <div class="skolls">
             <span class="skill-description">Lorem ipsum dolor sit amet, consectetur adipiscingVivam sit amet ligula non lectus cursus egestas. Cras erat lorem, fringilla quis sagittis in, sagittis inNam leo tortor Nam leo tortor Vivam.</span>
             <div class="bar-main-container">
@@ -67,6 +195,6 @@
                     <div style="clear:both;"></div>
                 </div>
             </div>
-        </div>
+        </div>*@
     </div>
 </article>

@@ -80,4 +80,25 @@ namespace SitePessoal
         }
     }
 
+    /// <summary>
+    /// Taghelper to conditionally add the class based on item value.
+    /// </summary>
+    [HtmlTargetElement("year-experience", Attributes = YearStartValueAttributeName)]
+    public class YearExperienceTagHelper : TagHelper
+    {
+        private const string YearStartValueAttributeName = "year-start-value";
+        private const string YearEndValueAttributeName = "year-end-value";
+        [HtmlAttributeName(YearStartValueAttributeName)]
+        public int YearStartValue { get; set; }
+        [HtmlAttributeName(YearEndValueAttributeName)]
+        public int? YearEndValue { get; set; }
+
+        public override void Process(TagHelperContext context, TagHelperOutput output)
+        {
+            var diff = (YearEndValue.HasValue ? YearEndValue.Value : DateTime.Today.Year) - YearStartValue;
+            output.Content.SetContent(diff.ToString());
+            base.Process(context, output);
+        }
+    }
+
 }

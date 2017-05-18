@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="About_Description1" xml:space="preserve">
-    <value>I love coding</value>
+    <value>I love coding!</value>
   </data>
   <data name="About_Description2" xml:space="preserve">
     <value>Welcome to my Personal profile</value>

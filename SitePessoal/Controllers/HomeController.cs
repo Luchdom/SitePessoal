@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Builder;
 
 namespace SitePessoal.Controllers
 {
+    
     public class HomeController : Controller
     {
         private readonly IStringLocalizer<HomeController> _localizer;
