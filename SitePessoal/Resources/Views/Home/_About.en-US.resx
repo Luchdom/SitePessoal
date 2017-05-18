@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About_Description1" xml:space="preserve">
+    <value>I love coding</value>
+  </data>
+  <data name="About_Description2" xml:space="preserve">
+    <value>Welcome to my Personal profile</value>
+  </data>
+  <data name="About_Me" xml:space="preserve">
+    <value>ABOUT ME</value>
+  </data>
+  <data name="Available_As" xml:space="preserve">
+    <value>Available as</value>
+  </data>
+  <data name="Bio1" xml:space="preserve">
+    <value>Hi, how are you doing? It's good that you wanna know a little more about me. Well...
+&lt;br&gt;
+As a &lt;b&gt;person&lt;/b&gt;, I am a guy who likes to spend time with my family, friends and girlfriend, enjoys online and consoles games, relaxes the mind in the gym, plays soccer (not the best) and mainly, I am a lover of new experiences, be them trips, walks, food or even dialogs with people who have high knowledge about any subject that is good to absorb, generating personal growth and positive changes. I believe (or I get as a philosophy) that people in general have more potential than they demonstrate, and they only need to start to "exist", to seek self-knowledge and understands that no experience in life is lost. And that at the same time we should be interesting and interested.</value>
+  </data>
+  <data name="Bio2" xml:space="preserve">
+    <value>As a &lt;b&gt; professional &lt;/b&gt;, I am a person who likes to understand what I'm working with, and I search about the business for the background of the project realization process. I like clean, organized and performatic code. I am attentive to details and I like to solve problems, especially those that I have not yet had any experience. I like a perception of the future based on what I am following in lectures, events and online courses about the new development technologies. And I am convinced that it is better to get to know WELL a development language instead of knows poorly many of them.</value>
+  </data>
+  <data name="DescriptionList" xml:space="preserve">
+    <value>Researcher,Programmer,Dreamer,Entrepreneur,Self-taught</value>
+  </data>
+  <data name="Facts" xml:space="preserve">
+    <value>FACTS</value>
+  </data>
+  <data name="HobbiesFilm" xml:space="preserve">
+    <value>Go to the movies and watch serials.</value>
+  </data>
+  <data name="HobbiesFutbol" xml:space="preserve">
+    <value>Play soccer, practice gym and run.</value>
+  </data>
+  <data name="HobbiesGame" xml:space="preserve">
+    <value>Play LOL, FIFA, AC, DriveClub among others.</value>
+  </data>
+  <data name="HobbiesLaptop" xml:space="preserve">
+    <value>Develop mini projects of IoT (using arduino and sensors), mobile, and risk myself into others platforms and code languages.</value>
+  </data>
+  <data name="HobbiesPlane" xml:space="preserve">
+    <value>Trips and tours.</value>
+  </data>
+  <data name="Interests" xml:space="preserve">
+    <value>INTERESTS</value>
+  </data>
+  <data name="Numbers_About_Me" xml:space="preserve">
+    <value>NUMBERS ABOUT ME</value>
+  </data>
+  <data name="Personal_Details" xml:space="preserve">
+    <value>PERSONAL DETAILS</value>
+  </data>
+  <data name="PreDescriptionList" xml:space="preserve">
+    <value>Hello. I am a</value>
+  </data>
+</root>

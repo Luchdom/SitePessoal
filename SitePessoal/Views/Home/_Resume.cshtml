@@ -1,0 +1,171 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@using Microsoft.Extensions.Localization
+@inject IViewLocalizer Localizer
+@inject IStringLocalizer<SharedResources> SharedLocalizer
+@inject IHtmlLocalizer<SharedResources> SharedHtmlLocalizer
+<article class="hs-content resume-section" id="section2">
+    <span class="sec-icon fa fa-address-card"></span>
+    <div class="hs-inner">
+        <span class="before-title">.02</span>
+        <h2>@SharedLocalizer["Resume"]</h2>
+        <!-- Resume Wrapper -->
+        <div class="resume-wrapper">
+            <ul class="resume">
+                <!-- Resume timeline -->
+                <li class="time-label">
+                    <span class="content-title">@Localizer["Education"]</span>
+                </li>
+                <li>
+                    <div class="resume-tag">
+                        <span class="fa fa-graduation-cap"></span>
+                        <div class="resume-date">
+                            <span>2016</span>
+                            <div class="separator"></div>
+                            <span>2011</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-location"><i class="fa fa-map-marker"></i>São Paulo, SP, Brasil</span>
+                        <h3 class="timeline-header">@Localizer["GraduationUSJT"]</h3>
+                        <div class="timeline-body">
+                            <h4>USJT - Universidade São Judas Tadeu</h4>
+                            <span>@Localizer["GraduationUSJTDesc"]</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="resume-tag">
+                        <span class="fa fa-graduation-cap"></span>
+                        <div class="resume-date">
+                            <span>2010</span>
+                            <div class="separator"></div>
+                            <span>2009</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-location"><i class="fa fa-map-marker"></i>São Caetano do Sul, SP, Brasil</span>
+                        <h3 class="timeline-header">@Localizer["GraduationTecETEC"]</h3>
+                        <div class="timeline-body">
+                            <h4>ETEC Jorge Street</h4>
+                            <span>@Localizer["GraduationTecETECDesc"]</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="resume-tag">
+                        <span class="fa fa-graduation-cap"></span>
+                        <div class="resume-date">
+                            <span>2010</span>
+                            <div class="separator"></div>
+                            <span>2008</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-location"><i class="fa fa-map-marker"></i>São Caetano do Sul, SP, Brasil</span>
+                        <h3 class="timeline-header">@Localizer["GraduationHighSchoolETEC"]</h3>
+                        <div class="timeline-body">
+                            <h4>ETEC Jorge Street</h4>
+                            <span>@Localizer["GraduationHighSchoolETECDesc"]</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="resume-tag">
+                        <span class="fa fa-graduation-cap"></span>
+                        <div class="resume-date">
+                            <span>2013</span>
+                            <div class="separator"></div>
+                            <span>2008</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-location"><i class="fa fa-map-marker"></i>São Paulo, SP, Brasil</span>
+                        <h3 class="timeline-header">@Localizer["GraduationCulturaInglesa"]</h3>
+                        <div class="timeline-body">
+                            <h4>Cultura Inglesa</h4>
+                            <span>@Localizer["GraduationCulturaInglesaDesc"]</span>
+                        </div>
+                    </div>
+                </li>
+                <!-- JOBS AND EXPERIENCE -->
+                <li class="time-label">
+                    <span class="content-title">@Localizer["Jobs_And_Experience"]</span>
+                </li>
+                <li>
+                    <div class="resume-tag">
+                        <span class="fa fa-briefcase"></span>
+                        <div class="resume-date">
+                            <span>-</span>
+                            <div class="separator"></div>
+                            <span>2017</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-location"><i class="fa fa-map-marker"></i>São Paulo, SP, Brasil</span>
+                        <h3 class="timeline-header">@Localizer["Job1Header"]</h3>
+                        <div class="timeline-body">
+                            <h4>@Localizer["Job1Company"]</h4>
+                            <span>@Localizer["Job1Body"]</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="resume-tag">
+                        <span class="fa fa-briefcase"></span>
+                        <div class="resume-date">
+                            <span>2016</span>
+                            <div class="separator"></div>
+                            <span>2012</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-location"><i class="fa fa-map-marker"></i>Santo André, SP, Brasil</span>
+                        <h3 class="timeline-header">@Localizer["Job2Header"]</h3>
+                        <div class="timeline-body">
+                            <h4>RA System</h4>
+                            <span>@Localizer["Job2Body"]</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="resume-tag">
+                        <span class="fa fa-briefcase"></span>
+                        <div class="resume-date">
+                            <span>2012</span>
+                            <div class="separator"></div>
+                            <span>2011</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-location"><i class="fa fa-map-marker"></i>São Caetano do Sul, SP, Brasil</span>
+                        <h3 class="timeline-header">@Localizer["Job3Header"]</h3>
+                        <div class="timeline-body">
+                            <h4>Adviser Tecnologia</h4>
+                            <span>@Localizer["Job3Body"]</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="resume-tag">
+                        <span class="fa fa-briefcase"></span>
+                        <div class="resume-date">
+                            <span>2011</span>
+                            <div class="separator"></div>
+                            <span>2011</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-location"><i class="fa fa-map-marker"></i>São Paulo, SP, Brasil</span>
+                        <h3 class="timeline-header">@Localizer["Job4Header"]</h3>
+                        <div class="timeline-body">
+                            <h4>Selten Engenharia</h4>
+                            <span>@Localizer["Job4Body"]</span>
+                        </div>
+                    </div>
+                </li>
+                <!-- End Resume timeline -->
+            </ul>
+        </div>
+        <!-- End Resume Wrapper -->
+    </div>
+</article>

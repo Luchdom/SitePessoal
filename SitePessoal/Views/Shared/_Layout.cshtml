@@ -1,0 +1,80 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<SharedResources> SharedLocalizer
+@inject IHtmlLocalizer<SharedResources> SharedHtmlLocalizer
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lucas Domingues | @SharedLocalizer["Profession"]</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- CSS | STYLE -->
+    <environment names="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="~/css/font-awesome.min.css" />
+        <link rel="stylesheet" type="text/css" href="~/css/linecons.css" />
+        <link rel="stylesheet" type="text/css" href="~/css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="~/css/style.css" />
+    </environment>
+    <environment names="Staging,Production">
+        @*<link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />*@
+        <link async rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+    </environment>
+    <environment names="Development,Staging,Production">
+ 
+        <link async href='http://fonts.googleapis.com/css?family=Montserrat:400' rel='stylesheet' type='text/css'>
+        <link async href='http://fonts.googleapis.com/css?family=Raleway:200,400,300,500,600' rel='stylesheet' type='text/css'>
+    </environment>
+        <!-- CSS | Google Fonts -->
+        <noscript>
+            <style>
+        @@media screen and (max-width: 755px) {
+            .hs-content-scroller {
+                overflow: visible;
+            }
+        }
+            </style>
+        </noscript>
+   
+</head>
+<body>
+    @RenderBody()
+    <environment names="Development,Staging,Production">
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    </environment>
+    <environment names="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <!-- PLUGIN SCRIPTS -->
+        <script type="text/javascript" src="~/js/default.js"></script>
+        <script type="text/javascript" src="~/js/watch.js"></script>
+        <script type="text/javascript" src="~/js/layout.js"></script>
+        <script type="text/javascript" src="~/js/main.js"></script>
+        <!-- END PLUGIN SCRIPTS -->
+    </environment>
+    <environment names="Staging,Production">
+        @*<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
+        </script>*@
+
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+    </environment>
+  
+    @await Html.PartialAsync("_Custom.js")
+</body>
+</html>

@@ -1,0 +1,174 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@using Microsoft.Extensions.Localization
+@inject IViewLocalizer Localizer
+@inject IStringLocalizer<SharedResources> SharedLocalizer
+@inject IHtmlLocalizer<SharedResources> SharedHtmlLocalizer
+
+<article class="hs-content about-section" id="section1">
+    <span class="sec-icon fa fa-home"></span>
+    <div class="hs-inner">
+        <span class="before-title">.01</span>
+        <h2>@SharedLocalizer["About"]</h2>
+        <span class="content-title">@Localizer["Personal_Details"]</span>
+        <div class="aboutInfo-contanier">
+            <div class="about-card">
+                <div class="face2 card-face">
+                    <div id="cd-google-map">
+                        <div id="google-container"></div>
+                        <div id="cd-zoom-in"></div>
+                        <div id="cd-zoom-out"></div>
+                        <address>@SharedLocalizer["Location"]</address>
+                        <div class="back-cover" data-card-back="data-card-back">
+                            <i class="fa fa-long-arrow-left"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="face1 card-face">
+                    <div class="about-cover card-face">
+                        <a class="map-location" data-card-front="data-card-front">
+                            <img src="~/images/map-icon.png" alt="">
+                        </a>
+                        <div class="about-details">
+                            <div>
+                                <span class="fa fa-envelope"></span><span class="detail"><a href="mailto:lucas.domingues@luchdom.com?Subject=Contato%20Site" target="_top">lucas.domingues@luchdom.com</a></span>
+                            </div>
+                            <div>
+                                <span class="fa fa-skype"></span><span class="detail"><a href="skype:lucas.h.domingues?chat">lucas.h.domingues</a></span>
+                            </div>
+                        </div>
+                        <div class="cover-content-wrapper">
+                            <span class="about-description">
+                                @Localizer["PreDescriptionList"]
+                                <span class="rw-words" data-description="@Localizer["DescriptionList"]" span-description-array="@Localizer["DescriptionList"]">
+                                </span>
+                                <br>@Localizer["About_Description1"]
+                                <br>@Localizer["About_Description2"]
+                            </span>
+                            <span class="status">
+                                <span class="fa fa-circle"></span>
+                                <span class="text">@Localizer["Available_As"] <strong>freelancer</strong></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="more-details">
+                <div class="tabbable tabs-vertical tabs-left">
+                    <ul id="myTab" class="nav nav-tabs">
+                        <li class="active">
+                            <a href="#bio" data-toggle="tab">Bio</a>
+                        </li>
+                        <li>
+                            <a href="#hobbies" data-toggle="tab">Hobbies</a>
+                        </li>
+                        <li>
+                            <a href="#facts" data-toggle="tab">@Localizer["Facts"] </a>
+                        </li>
+                    </ul>
+                    <div id="myTabContent" class="tab-content">
+                        <div class="tab-pane fade in active" id="bio">
+                            <h3>BIO</h3>
+                            <h4>@Localizer["About_Me"]</h4>
+                            <p>@Localizer["Bio1"]</p>
+                            <p>@Localizer["Bio2"]</p>
+                        </div>
+                        <div class="tab-pane fade" id="hobbies">
+                            <h3>HOBBIES</h3>
+                            <h4>@Localizer["Interests"]</h4>
+                            <div class="hobbie-wrapper row">
+                                <div class="hobbie-icon col-md-3">
+                                    <i class="fa fa-futbol-o"></i>
+                                </div>
+                                <div class="hobbie-description col-md-9">
+                                    <p>@Localizer["HobbiesFutbol"]</p>
+                                </div>
+                                <div style="clear:both;"></div>
+                            </div>
+                            <div class="hobbie-wrapper row">
+                                <div class="hobbie-icon col-md-3">
+                                    <i class="fa fa-plane"></i>
+                                </div>
+                                <div class="hobbie-description col-md-9">
+                                    <p>@Localizer["HobbiesPlane"]</p>
+                                </div>
+                            </div>
+                            <div class="hobbie-wrapper row">
+                                <div class="hobbie-icon col-md-3">
+                                    <i class="fa fa-laptop"></i>
+                                </div>
+                                <div class="hobbie-description col-md-9">
+                                    <p>@Localizer["HobbiesLaptop"]</p>
+                                </div>
+                            </div>
+                            <div class="hobbie-wrapper row">
+                                <div class="hobbie-icon col-md-3">
+                                    <i class="fa fa-gamepad"></i>
+                                </div>
+                                <div class="hobbie-description col-md-9">
+                                    <p>@Localizer["HobbiesGame"]</p>
+                                </div>
+                            </div>
+                            <div class="hobbie-wrapper row">
+                                <div class="hobbie-icon col-md-3">
+                                    <i class="fa fa-film"></i>
+                                </div>
+                                <div class="hobbie-description col-md-9">
+                                    <p>@Localizer["HobbiesFilm"]</p>
+                                </div>
+                            </div>
+                            <div style="clear:both;"></div>
+                        </div>
+                        @*<div class="tab-pane fade" id="facts">
+                            <h3>@Localizer["Facts"]</h3>
+                            <h4>@Localizer["Numbers_About_Me"]</h4>
+                            <div class="facts-wrapper col-md-6">
+                                <div class="facts-icon">
+                                    <i class=" li_cup"></i>
+                                </div>
+                                <div class="facts-number">6205</div>
+                                <div class="facts-description">CUPS OF COFFEE</div>
+                            </div>
+                            <div class="facts-wrapper col-md-6">
+                                <div class="facts-icon">
+                                    <i class="li_bulb"></i>
+                                </div>
+                                <div class="facts-number">65</div>
+                                <div class="facts-description">PROJECTS COMPLETED</div>
+                            </div>
+                            <div class="facts-wrapper col-md-6">
+                                <div class="facts-icon">
+                                    <i class="li_clock"></i>
+                                </div>
+                                <div class="facts-number">2965</div>
+                                <div class="facts-description">HOURS OF CODING</div>
+                            </div>
+                            <div class="facts-wrapper col-md-6">
+                                <div class="facts-icon">
+                                    <i class="li_t-shirt"></i>
+                                </div>
+                                <div class="facts-number">35</div>
+                                <div class="facts-description">WORKSHOPS</div>
+                            </div>
+                            <div class="facts-wrapper col-md-6">
+                                <div class="facts-icon">
+                                    <i class="li_display"></i>
+                                </div>
+                                <div class="facts-number">2M</div>
+                                <div class="facts-description">LINES OF CODE</div>
+                            </div>
+                            <div class="facts-wrapper col-md-6">
+                                <div class="facts-icon">
+                                    <i class=" li_like"></i>
+                                </div>
+                                <div class="facts-number">100</div>
+                                <div class="facts-description">SATISFIED CUSTOMERS</div>
+                            </div>
+                            <div style="clear:both;"></div>
+                        </div>*@
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+</article>
