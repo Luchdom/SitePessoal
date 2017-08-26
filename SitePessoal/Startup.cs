@@ -13,7 +13,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO.Compression;
 using WebMarkupMin.AspNet.Common.Compressors;
-using WebMarkupMin.AspNetCore1;
+using WebMarkupMin.AspNetCore2;
 using WebMarkupMin.Core;
 
 namespace SitePessoal
